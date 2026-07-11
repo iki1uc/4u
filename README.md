@@ -1,23 +1,30 @@
-# iki1uc – ROOT
+# 4u – Response Layer 7 (iki1uc)
 
-## Zweck
-Dieses Repository bildet den Ursprung der gesamten Struktur.  
-Es stellt die öffentliche Identität des Systems bereit und dient  
-als Einstiegspunkt für alle Module, Achsen und Bereiche.
+4u ist die 7. Response-Ebene im iki1uc-System.
+Sie ersetzt die alte RESPO-Achse durch ein neues, systemisches Modell:
 
-## Identität
-- CORE: iki1uc  
-- VERSION: 1.0  
-- CODE: RAW  
-- LAGE: ROOT / Creator / NC  
-- STATUS: Online  
+OK / NOK / FLOW / BREAK / ECHO / VOID / ROOT
 
-## Inhalt
-- index.html – öffentliche Landing‑Page  
-- ID.html – Identitätsdarstellung  
-- visual/ – Visualisierungen  
-- modules/ – Verlinkte System‑Repos  
+4u verbindet:
+- PX-TRIO (PX3 / PX6 / PX9)
+- PX12 / PX4 (Fusion + Achse)
+- SYS / SYS-x (System + Kreuzung)
+- 2me (Mirror-Return)
+- TEM (Zeit)
+- UI-SCANNER (Interface)
 
-## Hinweis
-Dieses Repository enthält keine Engine‑Mechanismen.  
-Es dient ausschließlich der öffentlichen Darstellung und Struktur.
+-----------------------------------------
+# FUNKTION
+
+respo.OK     → Zustimmung  
+respo.NOK    → Ablehnung  
+respo.FLOW   → System fließt  
+respo.BREAK  → System bricht  
+respo.ECHO   → Spiegelung  
+respo.VOID   → Neutral  
+respo.ROOT   → Rückkehr
+
+-----------------------------------------
+# STATUS
+
+4u ist aktiv, eigenständig und vollständig iki1uc.
