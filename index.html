@@ -2,28 +2,52 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>4u – Response Layer</title>
+<title>4u – Response Layer 7 · iki1uc</title>
 
 <style>
-body{background:#000;color:#0f0;font-family:monospace;padding:20px;}
-pre{background:#111;padding:20px;border:1px solid #333;}
-button{background:#111;color:#0f0;border:1px solid #333;padding:8px 16px;}
+body{background:#000;color:#0f0;font-family:monospace;padding:40px;}
+h1{color:#0f0;margin-bottom:30px;letter-spacing:3px;}
+.block{background:#111;border:1px solid #333;padding:20px;margin-bottom:25px;border-radius:6px;}
+.title{color:#6cf;font-size:20px;margin-bottom:10px;}
+a{color:#6cf;text-decoration:none;}
+pre{background:#000;border-left:3px solid #6cf;padding:12px;white-space:pre-wrap;}
+button{background:#111;color:#0f0;border:1px solid #333;padding:8px 16px;margin-top:10px;}
 </style>
 </head>
 
 <body>
 
-<h1>4u – Response Layer</h1>
+<h1>4u – Response Layer 7</h1>
 
-<button onclick="show()">RESPO</button>
+<div class="block">
+    <div class="title">4u – Funktion</div>
+    <p>4u ist die 7. Response‑Ebene im iki1uc‑System.</p>
+    <p>Sie arbeitet mit den sieben klaren Zuständen:</p>
+    <pre>
+OK / NOK / FLOW / BREAK / ECHO / VOID / ROOT
+    </pre>
+</div>
 
-<pre id="out">Bereit...</pre>
+<div class="block">
+    <div class="title">4u – Identität</div>
+    <p><a href="id.html">→ 4u‑ID öffnen</a></p>
+</div>
 
-<script type="module">
-import { respo } from "./respo.js";
+<div class="block">
+    <div class="title">4u – Response</div>
+    <button onclick="run()">RESPO</button>
+    <pre id="out">Bereit...</pre>
+</div>
 
-function show(){
-  out.textContent = JSON.stringify(respo, null, 2);
+<script>
+function run(){
+    const respo = {
+        layer: "4u",
+        state: "FLOW",
+        status: "ok",
+        time: Date.now()
+    };
+    out.textContent = JSON.stringify(respo, null, 2);
 }
 </script>
 
